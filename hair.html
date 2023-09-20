@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Playfair+Display:ital,wght@1,500&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section class="sub-header-2">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#about">ABOUT ME</a></li>
+                <li><a href="index.html#experience">EXPERIENCE</a></li>
+                <li><a href="index.html#projects">PROJECTS</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Hair Journey</h1>
+    <div class="text">
+        <p>I love coloring my hair! Each color brings me a whole new perspective.</p>
+    </div>
+    </section>
+    <section class="hair">
+        <div class="wrapper">
+            <i id="left" class="fa fa-angle-left"></i>
+            <div class="carousel">
+                <img src="images/me2.jpg" alt="img" draggable="false">
+                <img src="images/me3.jpg" alt="img" draggable="false">
+                <img src="images/me7.jpg" alt="img" draggable="false">
+                <img src="images/me1.jpg" alt="img" draggable="false">
+                <img src="images/me4.jpg" alt="img" draggable="false">
+                <img src="images/me5.jpg" alt="img" draggable="false">
+                <img src="images/me6.jpg" alt="img" draggable="false">
+                <img src="images/me8.jpg" alt="img" draggable="false">
+                <img src="images/me9.jpg" alt="img" draggable="false">
+            </div>
+            <i id="right" class="fa fa-angle-right"></i>
+        </div>
+    </section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html> 

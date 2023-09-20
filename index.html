@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Playfair+Display:ital,wght@1,500&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>Ella Guo</h1>
+    <p>Hi! This is Ella's personal website!</p>
+    <a href="https://drive.google.com/file/d/14URVbvMwnZeTgEDcE9c11H1DoIIafThd/view?usp=drive_link" class="hero-btn">View Resume</a>
+
+</div>
+</section>
+
+
+<section class="about" id="about">
+    <div class="row">
+        <div class="abt-col">
+            <img src="images/ellabg.jpg">
+        </div>
+        <div class="abt-col">
+            <h1>ABOUT ME</h1>
+            <p>
+                I am a junior at Tufts University studying Physics and Computer Science with a minor in Studio Art. 
+                I am passionate about solving complex problems at the intersection of science and technology. 
+                My interests include software engineering, quantum computing, machine learning, computer vision as well as robotics.
+                <br>
+                In my free time, I enjoy swimming, cooking, night walking, visiting museums, and traveling with my friends and family!
+            </p>
+            <div class="about-col">
+                <a href="art.html">
+                <h3>Art Portfolio</h3>
+            </a>
+        </div>
+            <div class="about-col">
+                <a href="hair.html">
+                <h3>Hair Journey</h3>
+            </a>
+        </div>
+        </div>
+    </div>
+    <!-- <div class="pic"> -->
+        <!-- <img src="images/ellabg.jpg"> -->
+    <!-- </div> -->
+    <!-- <div class="ro">
+        <div class="about-col">
+            <a href="art.html">
+            <h3>Art Portfolio</h3>
+        </a>
+        </div>
+        <div class="about-col">
+            <a href="hair.html">
+            <h3>Hair Journey</h3>
+        </a>
+        </div>
+    </div> -->
+</section>
+
+
+<section class="experience" id="experience">
+    <h1>EXPERIENCE</h1>
+    <div class="row">
+        <div class="experience-col">
+            <img src="images/TA1.jpg">
+            <div class="layer">
+                <h3>Teaching Assistant</h3>
+            </div>
+            <div class="text">
+                <p>Being a TA is definitely one of the most rewarding experience at Tufts. I met so many great people who are smart, 
+                    humorous, and caring in the TA community. We all love CS and have struggled in CS, so unlike professors or graduate
+                    TAs, we can be more empathetic when students are struggling and support them in their needs. </p>
+            </div>
+        </div>
+        <div class="experience-col">
+            <!-- <img src="images/temp1.jpg"> -->
+            <div class="layer">
+                <h3>more coming soon</h3>
+            </div>
+        </div>
+        <!-- <div class="experience-col">
+            <img src="images/temp2.jpg">
+            <div class="layer">
+                <h3></h3>
+            </div>
+        </div> -->
+    </div>
+</section>
+
+
+<section class="project" id="projects">
+    <h1>PROJECTS</h1>
+    <p>Projects documentation coming soon!</p>
+
+</section>
+
+
+<section class="contact" id="contact">
+    <h1>CONTACT</h1>
+    <div class="icons">
+        <div class="contact-item">
+            <i class="fa fa-phone"></i>
+            <a href="tel:+123456789" class="hero-btn">781-475-6456</a>
+        </div>
+        <div class="contact-item">
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:yixin.guo@tufts.edu" class="hero-btn">yixin.guo@tufts.edu</a>
+        </div>
+        <div class="contact-item">
+            <i class="fa fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/ella-yixin-guo-0b6795287/" class="hero-btn">LinkedIn Profile</a>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html> 

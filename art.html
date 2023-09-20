@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Playfair+Display:ital,wght@1,500&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#about">ABOUT ME</a></li>
+                <li><a href="index.html#experience">EXPERIENCE</a></li>
+                <li><a href="index.html#projects">PROJECTS</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Art Portfolio</h1>
+
+    <div class="book">
+
+            <div class="flip">
+                <img src="images/tapedrw.jpg">
+                <div class="layer">
+                    <h3>Tape Drawing</h3>
+                </div>
+                <h4>Tape</h4>
+                <p>A tape drawing of Jumbo (Tufts' mascot). This is my first time working on a drawing in such a large scale.</p>
+                <a href="https://drive.google.com/file/d/1u6n1CZpNZu01gIfCRUjToHEwyi4qg_ck/view?usp=drive_link" class="hero-btn red-btn">View Process</a>
+            </div>
+    
+        <div class="flip">
+            <img src="images/skull.jpg">
+            <div class="layer">
+                <h3>Skull</h3>
+            </div>
+            <h4>Pen</h4>
+            <p>This is a very disproportionate skull.</p>
+        </div>
+
+        <div class="flip">
+            <img src="images/treeroot.jpg">
+            <div class="layer">
+                <h3>Tree Root</h3>
+            </div>
+            <h4>Pencil</h4>
+            <p>A real root. Not the root node of a BST.</p>
+        </div>
+    </div>
+
+    <div class="book">
+        <div class="flip">
+            <img src="images/apple.jpg">
+            <div class="layer">
+                <h3>Monochrome Apple</h3>
+            </div>
+            <h4>Pencil/Watercolor</h4>
+            <p>Monochrome painting practice (first time using watercolor, so the quality of blending is kinda bad).</p>
+        </div>
+    
+        <div class="flip">
+            <img src="images/pear.jpg">
+            <div class="layer">
+                <h3>Pear by Layering</h3>
+            </div>
+            <h4>Watercolor</h4>
+            <p>Layering practice! Didn't use brown and green explicitly for this one! Just layering three to four primary and secondary colors.</p>
+        </div>
+    
+        <div class="flip">
+            <img src="images/sunset.jpg">
+            <div class="layer">
+                <h3>Somerville Sunset</h3>
+            </div>
+            <h4>Watercolor</h4>
+            <p>Trying to paint the Somerville sunset. Love it!</p>
+        </div>
+    </div>
+
+    <div class="book">
+        <div class="flip">
+            <img src="images/concert.jpg">
+            <div class="layer">
+                <h3>Mikrokosmos</h3>
+            </div>
+            <h4>Watercolor</h4>
+            <p>A late night concert of BTS.<br>"People are lights<br>
+                We shinin'"</p>
+        </div>
+
+        <div class="flip">
+            <img src="images/fun.jpg">
+            <div class="layer">
+                <h3>Explorative Graded Washes</h3>
+            </div>
+            <h4>Watercolor</h4>
+            <p>Some fun graded washes practices with salt and bubble wrap!</p>
+        </div>
+    
+        <div class="flip">
+            <img src="images/balletgirl.jpg">
+            <div class="layer">
+                <h3>The Ballet Dancer</h3>
+            </div>
+            <h4>Watercolor</h4>
+            <p>Inspired by Edgar Degas' Blue Dancers!</p>
+        </div>
+    </div>
+    </section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html> 
