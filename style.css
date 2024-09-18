@@ -302,8 +302,8 @@ a {
   }
   
 a:hover {
-    color: rgb(66, 163, 224);            
-    text-decoration: underline; 
+    color: rgb(226, 68, 105);            
+    text-decoration: none; 
 }
 
 .contact{
@@ -503,24 +503,4 @@ a:hover {
     .carousel img{
         width: 100%;
     }
-}
-
-table {
-    margin-left: 10%;
-    width: 40%;
-    border-collapse: collapse;
-
-}
-
-table, th, td {
-    border: 1px solid black; 
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #91aaed; 
 }
